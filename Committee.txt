@@ -1,0 +1,42 @@
+Username: qwer
+Password: 123
+Full Name: qef
+IC / Passport No: 123
+Nationalty: qwer
+Gender: Female
+Date of Birth: 122
+Contact No: 1234
+Email: qwerf
+Address: qwef
+Postcode: 1234
+City: qwef
+State: qwef
+
+Username: asd
+Password: as
+Full Name: as
+IC / Passport No: 123
+Nationalty: as
+Gender: Male
+Date of Birth: 12
+Contact No: 123
+Email: hanshengliang@outlook.com
+Address: asdf			
+Postcode: 39100
+City: Cameon Highlands
+State: Pahang
+
+Username: as
+Password: as
+Full Name: Liang
+IC / Passport No: 123
+Nationalty: 12
+Gender: Male
+Date of Birth: 12
+Contact No: 12
+Email: 12
+Address: 12
+Postcode: 12
+City: qw
+State: qw
+
