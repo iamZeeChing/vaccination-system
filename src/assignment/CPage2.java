@@ -5,6 +5,13 @@
  */
 package assignment;
 
+import javax.swing.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  *
  * @author Zhi Yan
@@ -91,7 +98,11 @@ public class CPage2 extends javax.swing.JFrame {
         jButton5.setText("Sign In");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                try {
+                    jButton5ActionPerformed(evt);
+                } catch (Exception e) {
+                    System.out.println("Read Txt file Error: " + e);
+                }
             }
         });
 
@@ -213,8 +224,42 @@ public class CPage2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) throws FileNotFoundException {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+
+        File comfile = new File("Committee.txt");
+        Scanner sc = new Scanner(comfile);
+        String username = "";
+        String password = "";
+
+        String txt_username = jTextField4.getText();
+        String txt_password = String.valueOf(CPassword.getPassword());
+
+        boolean isFound = false;
+
+        while (sc.hasNextLine() && !isFound) {
+            // Data from txt file
+            String data = sc.nextLine(); // file content
+            if (data.split(":")[0].replaceAll("\\s+", "").equals("Username")) {
+                username = data.split(":")[1].replaceAll("\\s+", "");
+            }
+            if (data.split(":")[0].replaceAll("\\s+", "").equals("Password")) {
+                password = data.split(":")[1].replaceAll("\\s+", "");
+            }
+
+            if (username.equals(txt_username) && password.equals(txt_password)) {
+                isFound = true;
+                this.dispose();
+                CPage3 AfterLoginPage= new CPage3();
+                AfterLoginPage.setVisible(true);
+            }
+        }
+
+        if (!isFound) {
+            JOptionPane.showMessageDialog(jTextField4, "Invalid Credentials");
+        }
+
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
