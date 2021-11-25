@@ -597,10 +597,12 @@ public class CPage1 extends javax.swing.JFrame {
                 }else if(pw1.equals(pw2)){
                     String data = CUsername.getText();
                     try {
-                        Scanner sc = new Scanner(comfile);
+                        Scanner sc = new Scanner(comfile); // file object
                         while (sc.hasNextLine()) {
-                            data = sc.nextLine();
-                            if (data.equals(username)){
+                            data = sc.nextLine(); // file content
+                            data = data.split(":")[1];
+                            data = data.replaceAll("\\s+", "");
+                            if (data.equals(username.trim())){
                                 JOptionPane.showMessageDialog(CPassword2, "Username is taken! Please try again.");
                                 break;
                             }else{
