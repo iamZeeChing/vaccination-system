@@ -44,7 +44,7 @@ public class PersonalInfoPage extends BasePage {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         text_area_main = new javax.swing.JTextArea();
-        btn_people_account_2 = new javax.swing.JButton();
+        btn_people_account = new javax.swing.JButton();
         btn_get_personal_info = new javax.swing.JButton();
         VacAppoint = new javax.swing.JButton();
         Supply = new javax.swing.JButton();
@@ -94,14 +94,14 @@ public class PersonalInfoPage extends BasePage {
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        btn_people_account_2.setBackground(new java.awt.Color(102, 102, 102));
-        btn_people_account_2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btn_people_account_2.setForeground(new java.awt.Color(255, 255, 255));
-        btn_people_account_2.setText("People Account");
-        btn_people_account_2.setToolTipText("");
-        btn_people_account_2.addActionListener(new java.awt.event.ActionListener() {
+        btn_people_account.setBackground(new java.awt.Color(102, 102, 102));
+        btn_people_account.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btn_people_account.setForeground(new java.awt.Color(255, 255, 255));
+        btn_people_account.setText("People Account");
+        btn_people_account.setToolTipText("");
+        btn_people_account.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                get_people_account_2(evt);
+                get_people_account(evt);
             }
         });
 
@@ -172,7 +172,7 @@ public class PersonalInfoPage extends BasePage {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn_get_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_people_account_2, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_people_account, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(VacAppoint)
                     .addComponent(Supply, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(StatRe, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -190,7 +190,7 @@ public class PersonalInfoPage extends BasePage {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btn_get_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_people_account_2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_people_account, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(VacAppoint, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -216,8 +216,9 @@ public class PersonalInfoPage extends BasePage {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void get_people_account_2(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
+    private void get_people_account(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
         // TODO add your handling code here:
+
 //        this.dispose();
 //        CPage5_ManagePeopleAcc PeopleAcc= new CPage5_ManagePeopleAcc();
 //        PeopleAcc.setVisible(true);
@@ -294,7 +295,7 @@ public class PersonalInfoPage extends BasePage {
     private javax.swing.JButton Supply;
     private javax.swing.JButton VacAppoint;
     private javax.swing.JButton btn_get_personal_info;
-    private javax.swing.JButton btn_people_account_2;
+    private javax.swing.JButton btn_people_account;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
