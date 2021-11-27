@@ -22,6 +22,21 @@ public class MyPeople {
     private String city;
     private String state;
 
+    public MyPeople(String name, String password, String realName, int noic, int dob, int contactno, String email, String address1, String address2, int postcode, String city, String state) {
+        this.name = name;
+        this.password = password;
+        this.realName = realName;
+        this.noic = noic;
+        this.dob = dob;
+        this.contactno = contactno;
+        this.email = email;
+        this.address1 = address1;
+        this.address2 = address2;
+        this.postcode = postcode;
+        this.city = city;
+        this.state = state;
+    }
+
     MyPeople(String b, int y) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

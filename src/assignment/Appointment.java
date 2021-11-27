@@ -6,6 +6,7 @@ public class Appointment {
     private Day day;
     private int id;
     private int time;
+    private String dose;
     private MyCommittee owner; //OO
 
     public Appointment(Vaccine vac, Day day, int id, int time, MyCommittee owner) {
@@ -13,6 +14,7 @@ public class Appointment {
         this.day = day;
         this.id = id;
         this.time = time;
+        this.dose = dose;
         this.owner = owner;
     }
 

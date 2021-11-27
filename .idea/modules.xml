@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/vaccination-system.iml" filepath="$PROJECT_DIR$/vaccination-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vacc-system.iml" filepath="$PROJECT_DIR$/vacc-system.iml" />
     </modules>
   </component>
 </project>
