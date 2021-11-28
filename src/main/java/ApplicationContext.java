@@ -4,7 +4,7 @@
  */
 package main.java;
 
-import main.java.pages.PersonalInfoPage.PersonalInfoPage;
+import main.java.pages.CommitteeMainPage.CommitteeMainPage;
 import main.java.pages.LoginPage.LoginPage;
 import main.java.pages.RegisterPage.RegisterPage;
 
@@ -17,14 +17,14 @@ import java.io.FileNotFoundException;
 public class ApplicationContext {
     LoginPage loginPage;
     RegisterPage registerPage;
-    PersonalInfoPage personalInfoPage;
+    CommitteeMainPage committeeMainPage;
     String currentUsername;
     String currentMode;
 
     public ApplicationContext() throws FileNotFoundException {
         this.loginPage = new LoginPage(this);
         this.registerPage = new RegisterPage(this);
-        this.personalInfoPage = new PersonalInfoPage(this);
+        this.committeeMainPage = new CommitteeMainPage(this);
     }
 
     public LoginPage getLoginPage() {
@@ -36,8 +36,8 @@ public class ApplicationContext {
         return registerPage;
     }
 
-    public PersonalInfoPage getPersonalInfoPage() {
-        return personalInfoPage;
+    public CommitteeMainPage getPersonalInfoPage() {
+        return committeeMainPage;
     }
 
     public String getCurrentUsername() {
