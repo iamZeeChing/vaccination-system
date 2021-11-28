@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main.java.pages.PersonalInfoPage;
+package main.java.pages.CommitteeAccountPage;
 
 import main.java.ApplicationContext;
 import main.java.models.User;
@@ -16,12 +16,12 @@ import java.io.FileNotFoundException;
  *
  * @author Zhi Yan
  */
-public class PersonalInfoPage extends BasePage {
+public class CommitteeAccountPage extends BasePage {
 
     /**
      * Creates new form CPage3
      */
-    public PersonalInfoPage(ApplicationContext applicationContext) throws FileNotFoundException {
+    public CommitteeAccountPage(ApplicationContext applicationContext) throws FileNotFoundException {
         super(applicationContext);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -36,6 +36,10 @@ public class PersonalInfoPage extends BasePage {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     public void initComponents() {
 
+        Modify1 = new javax.swing.JButton();
+        Modify2 = new javax.swing.JButton();
+        Modify4 = new javax.swing.JButton();
+        Modify5 = new javax.swing.JButton();
         jPanel_main = new javax.swing.JPanel();
         jPanel_personal_info = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -48,6 +52,33 @@ public class PersonalInfoPage extends BasePage {
         logout = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        Delete = new javax.swing.JButton();
+        Save = new javax.swing.JButton();
+        Modify = new javax.swing.JButton();
+
+        Modify1.setBackground(new java.awt.Color(102, 102, 102));
+        Modify1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Modify1.setForeground(new java.awt.Color(255, 255, 255));
+        Modify1.setText("Modify");
+        Modify1.setToolTipText("");
+
+        Modify2.setBackground(new java.awt.Color(102, 102, 102));
+        Modify2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Modify2.setForeground(new java.awt.Color(255, 255, 255));
+        Modify2.setText("Modify");
+        Modify2.setToolTipText("");
+
+        Modify4.setBackground(new java.awt.Color(102, 102, 102));
+        Modify4.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Modify4.setForeground(new java.awt.Color(255, 255, 255));
+        Modify4.setText("Modify");
+        Modify4.setToolTipText("");
+
+        Modify5.setBackground(new java.awt.Color(102, 102, 102));
+        Modify5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Modify5.setForeground(new java.awt.Color(255, 255, 255));
+        Modify5.setText("Modify");
+        Modify5.setToolTipText("");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,6 +188,34 @@ public class PersonalInfoPage extends BasePage {
         jLabel1.setText("COVID-19 VACCINE REGISTRATION SYSTEM");
         jLabel1.setToolTipText("");
 
+        Delete.setBackground(new java.awt.Color(102, 102, 102));
+        Delete.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Delete.setForeground(new java.awt.Color(255, 255, 255));
+        Delete.setText("Delete");
+        Delete.setToolTipText("");
+        Delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onDelete(evt);
+            }
+        });
+
+        Save.setBackground(new java.awt.Color(102, 102, 102));
+        Save.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Save.setForeground(new java.awt.Color(255, 255, 255));
+        Save.setText("Save");
+        Save.setToolTipText("");
+
+        Modify.setBackground(new java.awt.Color(102, 102, 102));
+        Modify.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        Modify.setForeground(new java.awt.Color(255, 255, 255));
+        Modify.setText("Modify");
+        Modify.setToolTipText("");
+        Modify.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onModity(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_mainLayout = new javax.swing.GroupLayout(jPanel_main);
         jPanel_main.setLayout(jPanel_mainLayout);
         jPanel_mainLayout.setHorizontalGroup(
@@ -177,6 +236,14 @@ public class PersonalInfoPage extends BasePage {
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1337, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_mainLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Modify, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
         );
         jPanel_mainLayout.setVerticalGroup(
             jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -200,7 +267,15 @@ public class PersonalInfoPage extends BasePage {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_mainLayout.createSequentialGroup()
+                        .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(Modify, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -217,12 +292,13 @@ public class PersonalInfoPage extends BasePage {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void routeToPeopleAccountPage(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
-        this.applicationContext.getPersonalInfoPage().setVisible(false);
-        this.applicationContext.getPeopleAccountPage().setVisible(true);
+    private void routeToPeopleAccountPage(java.awt.event.ActionEvent evt) {                                      
+        this.applicationContext.getCommitteeAccountPage().setVisible(false);
+        this.applicationContext.getLoginPage().setVisible(true);
     }
 
     private void get_personal_info(java.awt.event.ActionEvent evt) throws FileNotFoundException {//GEN-FIRST:event_get_personal_info
+        this.applicationContext.setCurrentMode("personal_info");
         final String newLine = "\n";
         String contents = "";
         UserService userService = new UserService();
@@ -254,6 +330,7 @@ public class PersonalInfoPage extends BasePage {
         contents += newLine;
         contents += "Role: " + userDetails.getRole();
         text_area_main.setText(contents);
+        text_area_main.setEditable(false);
 
 //        for (String row: text_area_main.getText().split("\n")){
 //            System.out.println("row: " + row);
@@ -288,7 +365,38 @@ public class PersonalInfoPage extends BasePage {
 //        compage1.setVisible(true);
     }//GEN-LAST:event_logoutActionPerformed
 
+    private void onModity(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onModity
+        // TODO add your handling code here:
+
+        if (this.applicationContext.getCurrentMode().equals("personal_info")) {
+            // Modify Personal Info Module
+            text_area_main.setEditable(true);
+        } else if (this.applicationContext.getCurrentMode().equals("xxx")) {
+            /// Modify xxx
+
+        }
+
+    }//GEN-LAST:event_onModity
+
+    private void onDelete(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onDelete
+        // TODO add your handling code here:
+        if (this.applicationContext.getCurrentMode().equals("personal_info")) {
+            // Delete Personal Info Module
+            \iuuyjmjtnhhrrgrb
+        } else if (this.applicationContext.getCurrentMode().equals("xxx")) {
+            /// Modify xxx
+
+        }
+    }//GEN-LAST:event_onDelete
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Delete;
+    private javax.swing.JButton Modify;
+    private javax.swing.JButton Modify1;
+    private javax.swing.JButton Modify2;
+    private javax.swing.JButton Modify4;
+    private javax.swing.JButton Modify5;
+    private javax.swing.JButton Save;
     private javax.swing.JButton StatRe;
     private javax.swing.JButton Supply;
     private javax.swing.JButton VacAppoint;

@@ -5,20 +5,17 @@
 package main.java;
 
 import main.java.pages.PeopleAccountPage.PeopleAccountPage;
-import main.java.pages.PersonalInfoPage.PersonalInfoPage;
+import main.java.pages.CommitteeAccountPage.CommitteeAccountPage;
 import main.java.pages.LoginPage.LoginPage;
 import main.java.pages.RegisterPage.RegisterPage;
 
 import java.io.FileNotFoundException;
 
-/**
- *
- * @author hansheng
- */
+
 public class ApplicationContext {
     LoginPage loginPage;
     RegisterPage registerPage;
-    PersonalInfoPage personalInfoPage;
+    CommitteeAccountPage CommitteeAccountPage;
     PeopleAccountPage peopleAccountPage;
     String currentUsername;
     String currentMode;
@@ -26,7 +23,7 @@ public class ApplicationContext {
     public ApplicationContext() throws FileNotFoundException {
         this.loginPage = new LoginPage(this);
         this.registerPage = new RegisterPage(this);
-        this.personalInfoPage = new PersonalInfoPage(this);
+        this.CommitteeAccountPage = new CommitteeAccountPage(this);
         this.peopleAccountPage = new PeopleAccountPage(this);
     }
 
@@ -38,8 +35,8 @@ public class ApplicationContext {
         return registerPage;
     }
 
-    public PersonalInfoPage getPersonalInfoPage() {
-        return personalInfoPage;
+    public CommitteeAccountPage getCommitteeAccountPage() {
+        return CommitteeAccountPage;
     }
 
     public PeopleAccountPage getPeopleAccountPage() {

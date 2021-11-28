@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae4e9088-58af-4f98-abd8-c87c58caad8b" name="Changes" comment=":zap: People Account Page" />
+    <list default="true" id="64a55a64-749a-4d11-8344-84ca4885b892" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/UserFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/UserFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage/PeopleAccountPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage/PeopleAccountPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage/PeopleAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage/PeopleAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CommitteeAccountPage/CommitteeAccountPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CommitteeAccountPage/CommitteeAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage/RegisterPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage/RegisterPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacc-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vacc-system.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21VYroY707eab1tFfgHUDNroENg" />
+  <component name="ProjectId" id="21XbidoW6gtNDRALnfZeJyGG501" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,19 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hansheng\OneDrive\Desktop\vacc-system\src\main\java\pages\PeopleAccountPage" />
-      <recent name="C:\Users\hansheng\OneDrive\Desktop\vacc-system\src\main\java\pages\CommitteePage" />
-      <recent name="C:\Users\hansheng\OneDrive\Desktop\vacc-system\src\main\java\pages\LoginPage" />
-      <recent name="C:\Users\hansheng\OneDrive\Desktop\vacc-system\src\main\java\pages\RegisterPage" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="ApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -62,54 +74,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae4e9088-58af-4f98-abd8-c87c58caad8b" name="Changes" comment="" />
-      <created>1638027923277</created>
+      <changelist id="64a55a64-749a-4d11-8344-84ca4885b892" name="Changes" comment="" />
+      <created>1638090507864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638027923277</updated>
-      <workItem from="1638027924780" duration="15466000" />
-      <workItem from="1638068095661" duration="1995000" />
+      <updated>1638090507864</updated>
     </task>
-    <task id="LOCAL-00001" summary=":zap: Add gitignore">
-      <created>1638038357786</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1638038357786</updated>
-    </task>
-    <task id="LOCAL-00002" summary=":zap: Personal Info Module">
-      <created>1638038382510</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1638038382510</updated>
-    </task>
-    <task id="LOCAL-00003" summary=":construction: Get People Account Module WIP">
-      <created>1638038799046</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1638038799046</updated>
-    </task>
-    <task id="LOCAL-00004" summary=":zap: Personal Info Page">
-      <created>1638068208885</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1638068208885</updated>
-    </task>
-    <task id="LOCAL-00005" summary=":zap: People Account Page">
-      <created>1638069512143</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638069512143</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -121,14 +92,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=":zap: Add gitignore" />
-    <MESSAGE value=":zap: Personal Info Module" />
-    <MESSAGE value=":construction: Get People Account Module WIP" />
-    <MESSAGE value=":zap: Personal Info Page" />
-    <MESSAGE value=":zap: People Account Page" />
-    <option name="LAST_COMMIT_MESSAGE" value=":zap: People Account Page" />
   </component>
 </project>

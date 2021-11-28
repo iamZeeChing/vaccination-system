@@ -13,6 +13,7 @@ public class User {
     private String postcode;
     private String city;
     private String state;
+    private String role;
 
     public String getUsername() {
         return username;
@@ -118,5 +119,5 @@ public class User {
         this.role = role;
     }
 
-    private String role;
+    
 }

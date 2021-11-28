@@ -39,113 +39,78 @@ public class PeopleAccountPage extends BasePage {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     public void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txt_area_people_account = new javax.swing.JTextArea();
-        btn_people_account = new javax.swing.JButton();
-        PersonalInfo = new javax.swing.JButton();
-        VacAppoint = new javax.swing.JButton();
-        Supply = new javax.swing.JButton();
-        StatRe = new javax.swing.JButton();
+        jPanel_main = new javax.swing.JPanel();
+        jPanel_personal_info = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        text_area_main = new javax.swing.JTextArea();
+        btn_get_personal_info = new javax.swing.JButton();
+        RegVac = new javax.swing.JButton();
+        VacStatus = new javax.swing.JButton();
         logout = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel_main.setBackground(new java.awt.Color(0, 102, 102));
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel_personal_info.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("COVID-19 VACCINE REGISTRATION SYSTEM");
-        jLabel1.setToolTipText("");
+        text_area_main.setColumns(20);
+        text_area_main.setRows(5);
+        jScrollPane1.setViewportView(text_area_main);
 
-        txt_area_people_account.setColumns(20);
-        txt_area_people_account.setRows(5);
-        jScrollPane2.setViewportView(txt_area_people_account);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 624, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jScrollPane2)))
+        javax.swing.GroupLayout jPanel_personal_infoLayout = new javax.swing.GroupLayout(jPanel_personal_info);
+        jPanel_personal_info.setLayout(jPanel_personal_infoLayout);
+        jPanel_personal_infoLayout.setHorizontalGroup(
+            jPanel_personal_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_personal_infoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+        jPanel_personal_infoLayout.setVerticalGroup(
+            jPanel_personal_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_personal_infoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        btn_people_account.setBackground(new java.awt.Color(0, 153, 153));
-        btn_people_account.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btn_people_account.setForeground(new java.awt.Color(255, 255, 255));
-        btn_people_account.setText("People Account");
-        btn_people_account.setToolTipText("");
-        btn_people_account.addActionListener(new java.awt.event.ActionListener() {
+        btn_get_personal_info.setBackground(new java.awt.Color(102, 102, 102));
+        btn_get_personal_info.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btn_get_personal_info.setForeground(new java.awt.Color(255, 255, 255));
+        btn_get_personal_info.setText("Personal Info");
+        btn_get_personal_info.setToolTipText("");
+        btn_get_personal_info.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
-                    get_people_accounts(evt);
+                    btn_get_personal_infoget_personal_info(evt);
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
             }
         });
 
-        PersonalInfo.setBackground(new java.awt.Color(102, 102, 102));
-        PersonalInfo.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        PersonalInfo.setForeground(new java.awt.Color(255, 255, 255));
-        PersonalInfo.setText("Personal Info");
-        PersonalInfo.setToolTipText("");
-        PersonalInfo.addActionListener(new java.awt.event.ActionListener() {
+        RegVac.setBackground(new java.awt.Color(102, 102, 102));
+        RegVac.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        RegVac.setForeground(new java.awt.Color(255, 255, 255));
+        RegVac.setText("Register Vaccination");
+        RegVac.setToolTipText("");
+        RegVac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                routeToPersonalInfo(evt);
+                RegVacActionPerformed(evt);
             }
         });
 
-        VacAppoint.setBackground(new java.awt.Color(102, 102, 102));
-        VacAppoint.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        VacAppoint.setForeground(new java.awt.Color(255, 255, 255));
-        VacAppoint.setText("Vaccination Appointments");
-        VacAppoint.setToolTipText("");
-        VacAppoint.addActionListener(new java.awt.event.ActionListener() {
+        VacStatus.setBackground(new java.awt.Color(102, 102, 102));
+        VacStatus.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        VacStatus.setForeground(new java.awt.Color(255, 255, 255));
+        VacStatus.setText("Vaccination Status");
+        VacStatus.setToolTipText("");
+        VacStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VacAppointActionPerformed(evt);
-            }
-        });
-
-        Supply.setBackground(new java.awt.Color(102, 102, 102));
-        Supply.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        Supply.setForeground(new java.awt.Color(255, 255, 255));
-        Supply.setText("Supply of Vaccines");
-        Supply.setToolTipText("");
-        Supply.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SupplyActionPerformed(evt);
-            }
-        });
-
-        StatRe.setBackground(new java.awt.Color(102, 102, 102));
-        StatRe.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        StatRe.setForeground(new java.awt.Color(255, 255, 255));
-        StatRe.setText("Statistical Reports");
-        StatRe.setToolTipText("");
-        StatRe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StatReActionPerformed(evt);
+                VacStatusActionPerformed(evt);
             }
         });
 
@@ -160,142 +125,157 @@ public class PeopleAccountPage extends BasePage {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PersonalInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_people_account, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VacAppoint)
-                    .addComponent(Supply, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(StatRe, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logout, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(26, 26, 26))
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("WELCOME TO");
+        jLabel7.setToolTipText("");
+        jLabel7.setName("header_1"); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("COVID-19 VACCINE REGISTRATION SYSTEM");
+        jLabel1.setToolTipText("");
+
+        javax.swing.GroupLayout jPanel_mainLayout = new javax.swing.GroupLayout(jPanel_main);
+        jPanel_main.setLayout(jPanel_mainLayout);
+        jPanel_mainLayout.setHorizontalGroup(
+            jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_mainLayout.createSequentialGroup()
+                .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_mainLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1363, Short.MAX_VALUE)))
+                    .addGroup(jPanel_mainLayout.createSequentialGroup()
+                        .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel_mainLayout.createSequentialGroup()
+                                .addGap(4, 4, 4)
+                                .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel_mainLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(VacStatus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(RegVac, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_mainLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btn_get_personal_info, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(12, 12, 12)
+                        .addComponent(jPanel_personal_info, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(PersonalInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_people_account, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(VacAppoint, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Supply, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(StatRe, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanel_mainLayout.setVerticalGroup(
+            jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_mainLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel_mainLayout.createSequentialGroup()
+                        .addComponent(btn_get_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(RegVac, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(VacStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                        .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel_main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel_main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void get_people_accounts(java.awt.event.ActionEvent evt) throws FileNotFoundException {//GEN-FIRST:event_get_people_accounts
-        // TODO add your handling code here:
-
-        userService = new UserService();
-        peopleList = userService.viewAllPeople();
-
+    private void btn_get_personal_infoget_personal_info(java.awt.event.ActionEvent evt) throws FileNotFoundException {//GEN-FIRST:event_btn_get_personal_infoget_personal_info
         final String newLine = "\n";
-        StringBuilder contents = new StringBuilder();
+        String contents = "";
+        UserService userService = new UserService();
+        User userDetails = userService.viewUser(this.applicationContext.getCurrentUsername());
+        text_area_main.setText("");
+        contents += "Username: " + userDetails.getUsername();
+        contents += newLine;
+        contents += "Password: " + userDetails.getPassword();
+        contents += newLine;
+        contents += "Actual Name: " + userDetails.getActualName();
+        contents += newLine;
+        contents += "Nationality: " + userDetails.getNationality();
+        contents += newLine;
+        contents += "Date of Birth: " + userDetails.getDateOfBirth();
+        contents += newLine;
+        contents += "Gender: " + userDetails.getGender();
+        contents += newLine;
+        contents += "Contact No: " + userDetails.getContactNo();
+        contents += newLine;
+        contents += "Email: " + userDetails.getEmail();
+        contents += newLine;
+        contents += "Address: " + userDetails.getAddress();
+        contents += newLine;
+        contents += "Postcode: " + userDetails.getPostcode();
+        contents += newLine;
+        contents += "City: " + userDetails.getCity();
+        contents += newLine;
+        contents += "State: " + userDetails.getState();
+        contents += newLine;
+        contents += "Role: " + userDetails.getRole();
+        text_area_main.setText(contents);
 
-        for (User userDetail: peopleList) {
-            contents.append("Username: ").append(userDetail.getUsername());
-            contents.append(newLine);
-            contents.append("Password: ").append(userDetail.getPassword());
-            contents.append(newLine);
-            contents.append("Actual Name: ").append(userDetail.getActualName());
-            contents.append(newLine);
-            contents.append("Nationality: ").append(userDetail.getNationality());
-            contents.append(newLine);
-            contents.append("Date of Birth: ").append(userDetail.getDateOfBirth());
-            contents.append(newLine);
-            contents.append("Gender: ").append(userDetail.getGender());
-            contents.append(newLine);
-            contents.append("Contact No: ").append(userDetail.getContactNo());
-            contents.append(newLine);
-            contents.append("Email: ").append(userDetail.getEmail());
-            contents.append(newLine);
-            contents.append("Address: ").append(userDetail.getAddress());
-            contents.append(newLine);
-            contents.append("Postcode: ").append(userDetail.getPostcode());
-            contents.append(newLine);
-            contents.append("City: ").append(userDetail.getCity());
-            contents.append(newLine);
-            contents.append("State: ").append(userDetail.getState());
-            contents.append(newLine);
-            contents.append(newLine);
-        }
-        txt_area_people_account.setText(contents.toString());
+        //        for (String row: text_area_main.getText().split("\n")){
+            //            System.out.println("row: " + row);
+            //        }
+    }//GEN-LAST:event_btn_get_personal_infoget_personal_info
 
-    }//GEN-LAST:event_get_people_accounts
-
-    private void routeToPersonalInfo(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_routeToPersonalInfo
-        this.applicationContext.getPeopleAccountPage().setVisible(false);
-        this.applicationContext.getPersonalInfoPage().setVisible(true);
-    }//GEN-LAST:event_routeToPersonalInfo
-
-    private void VacAppointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VacAppointActionPerformed
+    private void RegVacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegVacActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        CPage6_VacAppointment VacAppoint= new CPage6_VacAppointment();
-        VacAppoint.setVisible(true);
-    }//GEN-LAST:event_VacAppointActionPerformed
+        //        CPage6_VacAppointment VacAppoint= new CPage6_VacAppointment();
+        //        VacAppoint.setVisible(true);
+    }//GEN-LAST:event_RegVacActionPerformed
 
-    private void SupplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplyActionPerformed
+    private void VacStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VacStatusActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        CPage7_SupplyVac Supply= new CPage7_SupplyVac();
-        Supply.setVisible(true);
-    }//GEN-LAST:event_SupplyActionPerformed
-
-    private void StatReActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StatReActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        CPage8_Report StatRe= new CPage8_Report();
-        StatRe.setVisible(true);
-    }//GEN-LAST:event_StatReActionPerformed
+        //        CPage7_SupplyVac Supply= new CPage7_SupplyVac();
+        //        Supply.setVisible(true);
+    }//GEN-LAST:event_VacStatusActionPerformed
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        Page2_Committee compage1= new Page2_Committee();
-        compage1.setVisible(true);
+        //        Page2_Committee compage1= new Page2_Committee();
+        //        compage1.setVisible(true);
     }//GEN-LAST:event_logoutActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton PersonalInfo;
-    private javax.swing.JButton StatRe;
-    private javax.swing.JButton Supply;
-    private javax.swing.JButton VacAppoint;
-    private javax.swing.JButton btn_people_account;
+    private javax.swing.JButton RegVac;
+    private javax.swing.JButton VacStatus;
+    private javax.swing.JButton btn_get_personal_info;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel_main;
+    private javax.swing.JPanel jPanel_personal_info;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton logout;
-    private javax.swing.JTextArea txt_area_people_account;
+    private javax.swing.JTextArea text_area_main;
     // End of variables declaration//GEN-END:variables
 }

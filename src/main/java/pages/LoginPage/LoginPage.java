@@ -223,6 +223,7 @@ public class LoginPage extends BasePage {
 //        this.dispose();
 //        Page2 committeePage= new Page2();
 //        committeePage.setVisible(true);
+        System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txt_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usernameActionPerformed
@@ -236,6 +237,7 @@ public class LoginPage extends BasePage {
         Scanner sc = new Scanner(userFile);
         String username = "";
         String password = "";
+        String role = "";
 
         String input_username = txt_username.getText();
         String input_password = String.valueOf(txt_password.getPassword());
@@ -246,14 +248,22 @@ public class LoginPage extends BasePage {
             // Data from txt file
             String row = sc.nextLine(); // file content
             username = row.split(",")[0].replaceAll("\\s+", "");
-            password = row.split(",")[0].replaceAll("\\s+", "");
+            password = row.split(",")[1].replaceAll("\\s+", "");
+            role = row.split(",")[12].replaceAll("\\s+", "");
 
             if (username.equals(input_username) && password.equals(input_password)) {
-                isFound = true;
-                this.applicationContext.setCurrentUsername(username);
-                this.applicationContext.getLoginPage().setVisible(false);
-                this.applicationContext.getPersonalInfoPage().setVisible(true);
+                if(role.equals("Committee")){
+                    isFound = true;
+                    this.applicationContext.setCurrentUsername(username);
+                    this.applicationContext.getLoginPage().setVisible(false);
+                    this.applicationContext.getCommitteeAccountPage().setVisible(true);
 
+                }else if(role.equals("People")){
+                    isFound = true;
+                    this.applicationContext.setCurrentUsername(username);
+                    this.applicationContext.getLoginPage().setVisible(false);
+                    this.applicationContext.getPeopleAccountPage().setVisible(true);
+                }
             }
         }
 
@@ -263,12 +273,6 @@ public class LoginPage extends BasePage {
 
 
     }//GEN-LAST:event_routeToMainPage
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-        this.setVisible(false);
-        this.applicationContext.getRegisterPage().setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
 
     private void CSeenPwActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CSeenPwActionPerformed
         // Show and hide password:
@@ -284,6 +288,12 @@ public class LoginPage extends BasePage {
         this.setVisible(false);
         this.applicationContext.getRegisterPage().setVisible(true);
     }//GEN-LAST:event_routeToRegisterPage
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        this.applicationContext.getRegisterPage().setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox CSeenPw;
