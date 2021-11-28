@@ -382,7 +382,6 @@ public class CommitteeAccountPage extends BasePage {
         // TODO add your handling code here:
         if (this.applicationContext.getCurrentMode().equals("personal_info")) {
             // Delete Personal Info Module
-            \iuuyjmjtnhhrrgrb
         } else if (this.applicationContext.getCurrentMode().equals("xxx")) {
             /// Modify xxx
 
