@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ae4e9088-58af-4f98-abd8-c87c58caad8b" name="Changes" comment=":construction: Get People Account Module WIP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638027923277</updated>
       <workItem from="1638027924780" duration="15466000" />
+      <workItem from="1638068095661" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary=":zap: Add gitignore">
       <created>1638038357786</created>
@@ -111,6 +112,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":zap: Add gitignore" />

@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Zhi%20Yan/Downloads/Assignment%20New/Assignment%20New/src/assignment/ComIO.java</file>
-            <file>file:/C:/Users/Zhi%20Yan/Downloads/Assignment%20New/Assignment%20New/src/assignment/CPage1_CRegister.java</file>
-            <file>file:/C:/Users/Zhi%20Yan/Downloads/Assignment%20New/Assignment%20New/Committee.txt</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/MyCommittee.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/LoginPage/LoginPage.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/CPage3_CAfterLogin.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/CPage5_ManagePeopleAcc.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/RegisterPage/RegisterPage.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/ApplicationContext.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/BasePage.java</file>
         </group>
     </open-files>
 </project-private>

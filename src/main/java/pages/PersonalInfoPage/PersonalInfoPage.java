@@ -3,31 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main.java.pages.CommitteeMainPage;
+package main.java.pages.PersonalInfoPage;
 
 import main.java.ApplicationContext;
 import main.java.models.User;
 import main.java.pages.BasePage;
 import main.java.services.UserService;
 
-import java.awt.*;
 import java.io.FileNotFoundException;
 
 /**
  *
  * @author Zhi Yan
  */
-public class CommitteeMainPage extends BasePage {
+public class PersonalInfoPage extends BasePage {
 
     /**
      * Creates new form CPage3
      */
-    public CommitteeMainPage(ApplicationContext applicationContext) throws FileNotFoundException {
+    public PersonalInfoPage(ApplicationContext applicationContext) throws FileNotFoundException {
         super(applicationContext);
         initComponents();
         this.setLocationRelativeTo(null);
-        jPanel_main.remove(jPanel_people_account);
-        jPanel_main.repaint();
     }
 
     /**
@@ -40,9 +37,6 @@ public class CommitteeMainPage extends BasePage {
     public void initComponents() {
 
         jPanel_main = new javax.swing.JPanel();
-        jPanel_people_account = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jPanel_personal_info = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         text_area_main = new javax.swing.JTextArea();
@@ -58,38 +52,6 @@ public class CommitteeMainPage extends BasePage {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel_main.setBackground(new java.awt.Color(0, 102, 102));
-
-        jPanel_people_account.setBackground(new java.awt.Color(204, 204, 204));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane3.setViewportView(jTable1);
-
-        javax.swing.GroupLayout jPanel_people_accountLayout = new javax.swing.GroupLayout(jPanel_people_account);
-        jPanel_people_account.setLayout(jPanel_people_accountLayout);
-        jPanel_people_accountLayout.setHorizontalGroup(
-            jPanel_people_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_people_accountLayout.createSequentialGroup()
-                .addGap(286, 286, 286)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(354, Short.MAX_VALUE))
-        );
-        jPanel_people_accountLayout.setVerticalGroup(
-            jPanel_people_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_people_accountLayout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
 
         jPanel_personal_info.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -215,11 +177,6 @@ public class CommitteeMainPage extends BasePage {
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1337, Short.MAX_VALUE))
                 .addContainerGap())
-            .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel_mainLayout.createSequentialGroup()
-                    .addGap(245, 245, 245)
-                    .addComponent(jPanel_people_account, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(20, 20, 20)))
         );
         jPanel_mainLayout.setVerticalGroup(
             jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -244,11 +201,6 @@ public class CommitteeMainPage extends BasePage {
                         .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel_personal_info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(60, Short.MAX_VALUE))
-            .addGroup(jPanel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_mainLayout.createSequentialGroup()
-                    .addContainerGap(157, Short.MAX_VALUE)
-                    .addComponent(jPanel_people_account, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(25, 25, 25)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -267,9 +219,6 @@ public class CommitteeMainPage extends BasePage {
 
     private void get_people_account(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
         // TODO add your handling code here:
-        jPanel_main.remove(jPanel_personal_info);
-        jPanel_main.add(jPanel_people_account);
-        jPanel_main.repaint();
 
 //        this.dispose();
 //        CPage5_ManagePeopleAcc PeopleAcc= new CPage5_ManagePeopleAcc();
@@ -309,10 +258,6 @@ public class CommitteeMainPage extends BasePage {
         contents += newLine;
         contents += "Role: " + userDetails.getRole();
         text_area_main.setText(contents);
-
-        jPanel_main.remove(jPanel_people_account);
-        jPanel_main.add(jPanel_personal_info);
-        jPanel_main.repaint();
 
 //        for (String row: text_area_main.getText().split("\n")){
 //            System.out.println("row: " + row);
@@ -356,11 +301,8 @@ public class CommitteeMainPage extends BasePage {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel_main;
-    private javax.swing.JPanel jPanel_people_account;
     private javax.swing.JPanel jPanel_personal_info;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable jTable1;
     private javax.swing.JButton logout;
     private javax.swing.JTextArea text_area_main;
     // End of variables declaration//GEN-END:variables
