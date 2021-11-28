@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae4e9088-58af-4f98-abd8-c87c58caad8b" name="Changes" comment=":construction: Get People Account Module WIP">
+    <list default="true" id="ae4e9088-58af-4f98-abd8-c87c58caad8b" name="Changes" comment=":zap: Personal Info Page">
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/assignment/CPage5_ManagePeopleAcc.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/UserFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/UserFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +45,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pages/PeopleAccountPage" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638027923277</updated>
       <workItem from="1638027924780" duration="15466000" />
-      <workItem from="1638068095661" duration="77000" />
+      <workItem from="1638068095661" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary=":zap: Add gitignore">
       <created>1638038357786</created>
@@ -96,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638038799046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":zap: Personal Info Page">
+      <created>1638068208885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638068208885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +136,7 @@
     <MESSAGE value=":zap: Add gitignore" />
     <MESSAGE value=":zap: Personal Info Module" />
     <MESSAGE value=":construction: Get People Account Module WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value=":construction: Get People Account Module WIP" />
+    <MESSAGE value=":zap: Personal Info Page" />
+    <option name="LAST_COMMIT_MESSAGE" value=":zap: Personal Info Page" />
   </component>
 </project>

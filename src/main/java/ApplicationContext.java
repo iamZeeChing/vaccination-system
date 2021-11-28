@@ -4,6 +4,7 @@
  */
 package main.java;
 
+import main.java.pages.PeopleAccountPage.PeopleAccountPage;
 import main.java.pages.PersonalInfoPage.PersonalInfoPage;
 import main.java.pages.LoginPage.LoginPage;
 import main.java.pages.RegisterPage.RegisterPage;
@@ -18,6 +19,7 @@ public class ApplicationContext {
     LoginPage loginPage;
     RegisterPage registerPage;
     PersonalInfoPage personalInfoPage;
+    PeopleAccountPage peopleAccountPage;
     String currentUsername;
     String currentMode;
 
@@ -25,12 +27,12 @@ public class ApplicationContext {
         this.loginPage = new LoginPage(this);
         this.registerPage = new RegisterPage(this);
         this.personalInfoPage = new PersonalInfoPage(this);
+        this.peopleAccountPage = new PeopleAccountPage(this);
     }
 
     public LoginPage getLoginPage() {
         return loginPage;
     }
-
 
     public RegisterPage getRegisterPage() {
         return registerPage;
@@ -38,6 +40,10 @@ public class ApplicationContext {
 
     public PersonalInfoPage getPersonalInfoPage() {
         return personalInfoPage;
+    }
+
+    public PeopleAccountPage getPeopleAccountPage() {
+        return peopleAccountPage;
     }
 
     public String getCurrentUsername() {

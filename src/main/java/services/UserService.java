@@ -160,7 +160,7 @@ public class UserService {
         return userDetails;
     }
 
-    public List<User> viewAllUser() throws FileNotFoundException {
+    public List<User> viewAllPeople() throws FileNotFoundException {
         File userFile = new File("src/main/java/database/UserFile.txt");
         Scanner sc = new Scanner(userFile);
         List<User> userDetails = new ArrayList<>();

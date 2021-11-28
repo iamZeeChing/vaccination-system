@@ -83,7 +83,7 @@ public class PersonalInfoPage extends BasePage {
         btn_people_account.setToolTipText("");
         btn_people_account.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                get_people_account(evt);
+                routeToPeopleAccountPage(evt);
             }
         });
 
@@ -217,16 +217,12 @@ public class PersonalInfoPage extends BasePage {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void get_people_account(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
-        // TODO add your handling code here:
-
-//        this.dispose();
-//        CPage5_ManagePeopleAcc PeopleAcc= new CPage5_ManagePeopleAcc();
-//        PeopleAcc.setVisible(true);
-    }//GEN-LAST:event_get_people_account_2
+    private void routeToPeopleAccountPage(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_get_people_account_2
+        this.applicationContext.getPersonalInfoPage().setVisible(false);
+        this.applicationContext.getPeopleAccountPage().setVisible(true);
+    }
 
     private void get_personal_info(java.awt.event.ActionEvent evt) throws FileNotFoundException {//GEN-FIRST:event_get_personal_info
-        // TODO add your handling code here:
         final String newLine = "\n";
         String contents = "";
         UserService userService = new UserService();
