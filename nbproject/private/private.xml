@@ -5,12 +5,13 @@
         <group>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/MyCommittee.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/LoginPage/LoginPage.java</file>
-            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/CommitteeMainPage/CommitteeMainPage.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/CPage3_CAfterLogin.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/assignment/CPage5_ManagePeopleAcc.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/PeopleAccountPage/PeopleAccountPage.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/RegisterPage/RegisterPage.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/ApplicationContext.java</file>
             <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/BasePage.java</file>
+            <file>file:/C:/Users/hansheng/OneDrive/Desktop/vacc-system/src/main/java/pages/PersonalInfoPage/PersonalInfoPage.java</file>
         </group>
     </open-files>
 </project-private>
